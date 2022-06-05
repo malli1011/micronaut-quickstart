@@ -10,6 +10,10 @@
     </appender>
 
     <logger name="com.micronaut.sample" level="DEBUG"/>
+    <logger name="io.micronaut.context.condition" level="INFO"/>
+    <!-- uncomment this to check the dependency injection logs from micronaut.
+    <logger name="io.micronaut.context.condition" level="DEBUG"/>
+    -->
 
     <root level="info">
         <appender-ref ref="STDOUT" />

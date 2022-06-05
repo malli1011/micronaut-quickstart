@@ -1,7 +1,18 @@
+#We can define the predefined micronaut variables as environment variables using _ eg: MICRONAUT_SERVER_PORT=8085
 micronaut:
   application:
     name: micronautQuickstart
+  server:
+    port: ${SERVER_PORT:8080}
 netty:
   default:
     allocator:
       max-order: 3
+
+hello:
+  world:
+    translation:
+      de: "Hallo Welt"
+      en: "Hello World"
+      tm: "Vanakkam Ulagam"
+
